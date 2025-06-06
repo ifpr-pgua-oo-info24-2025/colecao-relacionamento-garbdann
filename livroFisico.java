@@ -18,7 +18,8 @@ public class livroFisico extends Livro {
     public String exibirDetalhes() {
         return "Título do livro: " + this.getTitulo() + "\n" +
                "Ano de publicação do livro: " + this.getAnoPublicacao() + "\n" +
-               "Nome do autor do livro: " + this.getAutor() + "\n" +
+               "Nome do autor do livro: " + this.getAutor().getNome() + "\n" +
+               "Nacionalidade do autor do livro: " + this.getAutor().getNacionalidade() + "\n" +
                "Número de páginas do livro: " + this.getNumeroDePaginas() + "\n";
     }
 }

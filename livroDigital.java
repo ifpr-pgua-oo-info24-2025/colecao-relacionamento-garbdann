@@ -18,7 +18,8 @@ public class livroDigital extends Livro {
     public String exibirDetalhes() {
         return "Título do livro: " + this.getTitulo() + "\n" +
                "Ano de publicação do livro: " + this.getAnoPublicacao() + "\n" +
-               "Nome do autor do livro: " + this.getAutor() + "\n" +
+               "Nome do autor do livro: " + this.getAutor().getNome() + "\n" +
+               "Nacionalidade do autor do livro: " + this.getAutor().getNacionalidade() + "\n" +
                "Tamanho do arquivo do livro (Em MB): " + this.getTamanhoDoArquivoMB() + "\n";
     }
 }
